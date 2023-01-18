@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sanchez", serif;
+}
+
+.nav-bar {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  align-items: center;
+}
+
+.nav-items a {
+  padding: 0 8px;
+  text-decoration: none;
+  color: rgb(12, 11, 11);
+}
+
+.nav-items a:hover {
+  color: rgb(13, 110, 73);
+}
+
+.secondary-button {
+  padding: 8px 16px;
+  border: 2px solid rgb(13, 110, 73);
+  background: none;
+  border-radius: 4px;
+}
+
+.primary-button {
+  padding: 10px 24px;
+  background: rgb(13, 110, 73);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-left: 8px;
+}
+
+.secondary-button:hover,
+.primary-button:hover {
+  background: rgb(23, 160, 107);
+  color: white;
+}
+
+/* .buttons{
+;
+} */
+
+.hero {
+  height: 70vh;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(woman.jpg);
+  background-size: cover;
+}
+
+.hero-text {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.help {
+  margin-top: 2rem;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.help-center {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.live-chat {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+.live-chat h5,
+.help-center h5 {
+  /* border: 2px solid red; */
+  text-align: center;
+  color: rgb(83, 83, 83);
+  font-size: 0.7rem;
+}
+
+.live-chat > * {
+  padding: 8px 0;
+}
+
+.help-center > * {
+  padding: 8px 0;
+}
+
+.action a {
+  text-decoration: none;
+  color: rgb(23, 160, 107);
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 30%;
+}
+
+.inquiries {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.inquiries > * {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.inquiries h2 {
+  font-size: 2rem;
+}
+.inquiries p {
+  font-size: 1rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstName,
+.lastName {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+.company-mail {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+input {
+  padding: 0px 8px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid rgb(168, 162, 162);
+}
+
+input:focus {
+  outline: 1px solid rgb(6, 163, 45);
+}
+
+label {
+  padding-bottom: 8px;
+}
+
+#textArea {
+  padding: 8px 8px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid rgb(168, 162, 162);
+}
+
+#textArea:focus {
+  outline: 1px solid rgb(13, 110, 73);
+}
+
+.submit-button {
+  padding: 12px 32px;
+  background-color: rgb(13, 110, 73);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  margin-top: 8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.sections {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+
+/* .first-location {
+  height:  10px;
+  width: 10px;
+}
+.second-location {
+  
+} */
+
+iframe {
+  height: 30rem;
+  width: 30rem;
+}
+
+.location-text {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer {
+  margin-top: 8rem;
+  /* margin-left: 2.5rem;
+   margin-right: 2.5rem; */
+  /* padding: 0 6rem; */
+  padding-bottom: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+}
+
+.elements {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6rem;
+}
+.elements a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 16px;
+}
+
+.main {
+  font-weight: bold;
+}
+
+.last {
+  margin: 0 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.others {
+  display: flex;
+}
+
+.privacy {
+  padding-right: 1rem;
+}
+
+.icon {
+  padding-right: 1rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: rgb(48, 45, 45);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* margin: 2rem; */
+    width: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-bar {
+    margin: 2rem;
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0;
+  }
+}
