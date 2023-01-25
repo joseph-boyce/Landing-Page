@@ -303,22 +303,215 @@ iframe {
   color: rgb(48, 45, 45);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   body {
-    /* margin: 2rem; */
-    width: 100%;
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
   }
 
-  .nav-bar {
+  /* .nav-bar {
     margin: 2rem;
     display: flex;
 
     justify-content: space-between;
     margin: 0;
+  } */
+
+ /* Moblie styles below */
+
+  .hero {
+    height: 50vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(woman.jpg);
+    background-size: cover;
   }
+
+  .hero-text {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .help {
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .help-center {
+    /* border: 2px solid red; */
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  
+  .live-chat {
+    /* border: 2px solid red; */
+    text-align: center;
+    
+  }
+  .live-chat h5,
+  .help-center h5 {
+    /* border: 2px solid red; */
+    text-align: center;
+    color: rgb(83, 83, 83);
+    font-size: 0.7rem;
+    
+  }
+  
+  .live-chat > * {
+    padding: 8px 0;
+  }
+  
+  .help-center > * {
+    padding: 8px 0;
+  }
+  
+  .action a {
+    text-decoration: none;
+    color: rgb(23, 160, 107);
+  }
+
+  hr {
+  display:none;
 }
+
+.inquiries {
+  padding: 2rem 1rem;
+ 
+}
+
+.inquiries > * {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.inquiries h2 {
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.inquiries p {
+  font-size: 1rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstName,
+.lastName {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+.company-mail {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+}
+
+input {
+  padding: 0px 8px;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid rgb(168, 162, 162);
+}
+
+input:focus {
+  outline: 1px solid rgb(6, 163, 45);
+}
+
+label {
+  padding-bottom: 8px;
+}
+
+#textArea {
+  padding: 8px 8px;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid rgb(168, 162, 162);
+}
+
+#textArea:focus {
+  outline: 1px solid rgb(13, 110, 73);
+}
+
+.submit-button {
+  padding: 12px 32px;
+  background-color: rgb(13, 110, 73);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  margin-top: 4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sections {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+}
+
+iframe {
+  height: 22rem;
+  width: 22rem;
+}
+
+.location-text {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.second-location {
+  margin-top: rem;
+}
+
+
+  
+
+}
+
