@@ -4,14 +4,23 @@
   font-family: "Sanchez", serif;
 }
 
+.container {
+  width: 100%;
+}
+
 .nav-bar {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  height: 5rem;
+  padding: 10px 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  /* border: 2px solid red; */
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: nowrap;
+  /* border: 2px solid red; */
+}
+
+.nav-items {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .nav-items a {
@@ -59,6 +68,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(woman.jpg);
   background-size: cover;
+  background-position: center;
+  object-fit: contain;
 }
 
 .hero-text {
@@ -145,7 +156,6 @@ hr {
 .lastName {
   display: flex;
   flex-direction: column;
-  padding: 8px 12px;
 }
 
 .mail {
@@ -166,7 +176,7 @@ hr {
 }
 
 input {
-  padding: 0px 8px;
+  /* padding: 0px 8px; */
   height: 42px;
   border-radius: 5px;
   border: 1px solid rgb(168, 162, 162);
@@ -216,7 +226,7 @@ h2 {
   margin-top: 4rem;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 /* .first-location {
@@ -240,10 +250,19 @@ iframe {
 
 .footer {
   margin-top: 8rem;
-  /* margin-left: 2.5rem;
-   margin-right: 2.5rem; */
-  /* padding: 0 6rem; */
   padding-bottom: 2rem;
+  width: 100%;
+}
+.elements {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 6rem; */
+}
+.elements a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 16px;
 }
 
 .product {
@@ -266,24 +285,12 @@ iframe {
   flex-direction: column;
 }
 
-.elements {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 6rem;
-}
-.elements a {
-  text-decoration: none;
-  color: black;
-  padding-bottom: 16px;
-}
-
 .main {
   font-weight: bold;
 }
 
 .last {
-  margin: 0 6rem;
+  /* margin: 0 6rem; */
   display: flex;
   justify-content: space-between;
 }
@@ -305,19 +312,23 @@ iframe {
 
 @media only screen and (max-width: 480px) {
   body {
-    
+    font-size: 80%;
   }
 
-  /* .nav-bar {
-    margin: 2rem;
+  .nav-bar {
+    background: #eee;
+    /* font-size: 40%; */
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    justify-content: space-between;
-    margin: 0;
-  } */
-
- /* Moblie styles below */
-
+  /* Moblie styles below */
   .hero {
     height: 50vh;
     background-color: green;
@@ -327,6 +338,8 @@ iframe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
       url(woman.jpg);
     background-size: cover;
+    background-position: center;
+    /* object-fit: contain; */
   }
 
   .hero-text {
@@ -344,17 +357,16 @@ iframe {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .help-center {
     /* border: 2px solid red; */
     text-align: center;
     padding-bottom: 3rem;
   }
-  
+
   .live-chat {
     /* border: 2px solid red; */
     text-align: center;
-    
   }
   .live-chat h5,
   .help-center h5 {
@@ -362,156 +374,149 @@ iframe {
     text-align: center;
     color: rgb(83, 83, 83);
     font-size: 0.7rem;
-    
   }
-  
+
   .live-chat > * {
     padding: 8px 0;
   }
-  
+
   .help-center > * {
     padding: 8px 0;
   }
-  
+
   .action a {
     text-decoration: none;
     color: rgb(23, 160, 107);
   }
 
   hr {
-  display:none;
-}
+    display: none;
+  }
 
-.inquiries {
-  padding: 2rem 1rem;
- 
-}
+  .inquiries {
+    padding: 2rem 1rem;
+  }
 
-.inquiries > * {
-  padding: 1rem 0;
-  text-align: center;
-}
+  .inquiries > * {
+    padding: 1rem 0;
+    text-align: center;
+  }
 
-.inquiries h2 {
-  font-size: 1.5rem;
-  padding: 2rem;
-}
-.inquiries p {
-  font-size: 1rem;
-}
+  .inquiries h2 {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+  .inquiries p {
+    font-size: 1rem;
+  }
 
-.name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstName,
+  .lastName {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+  }
+  .company-mail {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 12px;
+  }
+
+  input {
+    padding: 0px 8px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 162, 162);
+  }
+
+  input:focus {
+    outline: 1px solid rgb(6, 163, 45);
+  }
+
+  label {
+    padding-bottom: 8px;
+  }
+
+  #textArea {
+    padding: 8px 8px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 162, 162);
+  }
+
+  #textArea:focus {
+    outline: 1px solid rgb(13, 110, 73);
+  }
+
+  .submit-button {
+    padding: 12px 32px;
+    background-color: rgb(13, 110, 73);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .location {
+    margin-top: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .sections {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 1rem;
+  }
+
+  iframe {
+    height: 22rem;
+    width: 22rem;
+  }
+
+  .location-text {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .second-location {
+    margin-top: rem;
+  }
 }
-
-.form {
-  padding: 0 1rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-.firstName,
-.lastName {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 12px;
-}
-
-.mail {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 12px;
-}
-.company-mail {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 12px;
-}
-
-.message {
-  display: flex;
-  flex-direction: column;
-  padding: 8px 12px;
-}
-
-input {
-  padding: 0px 8px;
-  height: 42px;
-  border-radius: 5px;
-  border: 1px solid rgb(168, 162, 162);
-}
-
-input:focus {
-  outline: 1px solid rgb(6, 163, 45);
-}
-
-label {
-  padding-bottom: 8px;
-}
-
-#textArea {
-  padding: 8px 8px;
-  resize: none;
-  border-radius: 5px;
-  border: 1px solid rgb(168, 162, 162);
-}
-
-#textArea:focus {
-  outline: 1px solid rgb(13, 110, 73);
-}
-
-.submit-button {
-  padding: 12px 32px;
-  background-color: rgb(13, 110, 73);
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-.button {
-  display: flex;
-  justify-content: center;
-}
-
-.location {
-  margin-top: 4rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.sections {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 1rem;
-}
-
-iframe {
-  height: 22rem;
-  width: 22rem;
-}
-
-.location-text {
-  margin-top: 0.2rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.second-location {
-  margin-top: rem;
-}
-
-
-  
-
-}
-
